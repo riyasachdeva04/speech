@@ -41,7 +41,7 @@ def convert_wav_to_text():
         audio = sr.Recognizer().record(source)
 
     try:
-        result = sr.Recognizer().recognize_google(audio, language="ja-JP")
+        result = sr.Recognizer().recognize_google(audio)
 
         print("The audio file contains: " + result)
         
